@@ -216,7 +216,7 @@
     const urbanGeojson = d3.json('data/urban.geojson')
 
     // wait until data is loaded then send to draw map function
-//     Promise.all([stateGeojson, foodGeojson, urbanGeojson]).then(drawMap);
+    Promise.all([stateGeojson, foodGeojson, urbanGeojson]).then(drawMap);
     //
 
 	// DRAWMAP FUNCTION
