@@ -211,9 +211,9 @@
 
 	// LOADING FILES using d3.json()
     // request our data files and reference with variables
-    const stateGeojson = d3.json('data/states.geojson')
-    const foodGeojson = d3.json('data/food.geojson')
-    const urbanGeojson = d3.json('data/urban.geojson')
+    const stateGeojson = d3.json('map/data/states.geojson')
+    const foodGeojson = d3.json('map/data/food.geojson')
+    const urbanGeojson = d3.json('map/data/urban.geojson')
 
     // wait until data is loaded then send to draw map function
     Promise.all([stateGeojson, foodGeojson, urbanGeojson]).then(drawMap);
